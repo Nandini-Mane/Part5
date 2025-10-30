@@ -11,7 +11,6 @@ const App = () => {
       alert('Invalid credentials')
     }
   }
-
   if (!user) {
     return (
       <div>
@@ -20,7 +19,6 @@ const App = () => {
       </div>
     )
   }
-
   return (
     <div>
       <h2>Blogs</h2>
@@ -33,5 +31,4 @@ const App = () => {
     </div>
   )
 }
-
 export default App
