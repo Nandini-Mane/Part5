@@ -1,9 +1,5 @@
-// backend/index.js
-
-// Load environment variables (like PORT, MONGODB_URI) from .env file
 require('dotenv').config()
 
-// 1. IMPORT CORE MODULES AND CONFIG
 const config = require('./utils/config')
 const express = require('express')
 const app = express()
@@ -13,7 +9,6 @@ const logger = require('./utils/logger')
 const middleware = require('./utils/middleware')
 
 // 2. IMPORT ROUTERS
-// IMPORTANT: Ensure these files correctly export the Express router instance!
 const blogsRouter = require('./controllers/blogs') 
 const loginRouter = require('./controllers/login')
 
